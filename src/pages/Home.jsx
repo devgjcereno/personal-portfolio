@@ -3,10 +3,11 @@ import logo from "../assets/logo.png";
 import scrolldown from "../assets/scroll-down.png";
 import About from "./About.jsx";
 import Projects from "./Projects.jsx";
+import Skills from "./Skills.jsx";
 const Home = () => {
   return (
     <>
-    <div className="flex flex-row">
+      <div className="flex flex-row">
         <div className="h-full w-[90%] bg-[#F5F3EE]">
           {/* This is the navbar section */}
           <div className="w-full h-[60px] flex flex-row justify-between px-[64px] py-[20px]">
@@ -21,6 +22,9 @@ const Home = () => {
                   <li>WORK</li>
                   <a href="#about">
                     <li>ABOUT</li>
+                  </a>
+                  <a href="#projects">
+                    <li>PROJECTS</li>
                   </a>
                   <li>CONTACT</li>
                 </ul>
@@ -58,8 +62,12 @@ const Home = () => {
             <About />
           </section>
 
-          <section>
-            <Projects/>
+          <section id="projects">
+            <Projects />
+          </section>
+
+          <section id="skills">
+            <Skills />
           </section>
 
         </div>
