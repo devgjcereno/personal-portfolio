@@ -2,7 +2,7 @@ import React from "react";
 
 const SkillCard = ({ title, skills }) => {
     return (
-        <div className="w-[578px] h-[75px] px-[20px] py-[16px] bg-[#FFF] border-[2px] border-[#E8E8E3] rounded-[10px] ml-[64px] mb-[15px]">
+        <div className="w-[578px] h-[75px] px-[20px] py-[16px] mb-[20px] bg-[#FFF] border-[2px] border-[#E8E8E3] rounded-[10px] ml-[64px] mb-[15px]">
             <div>
                 <p className="text-[#566A2C] text-[12px] font-semibold">{title}</p>
             </div>

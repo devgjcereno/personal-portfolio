@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <>
-      <div className="flex flex-col pl-[64px] gap-[20px] pb-[200px]">
+      <div className="flex flex-col pl-[64px] gap-[20px]">
         <p className="text-[11px] font-bold text-[#111111]">ABOUT</p>
         <div className="flex flex-col text-[#555555] text-[13px] w-[575px] gap-[15px]">
           <p>
