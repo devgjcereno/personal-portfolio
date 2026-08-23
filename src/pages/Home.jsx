@@ -3,10 +3,12 @@ import logo from "../assets/logo.png";
 import scrolldown from "../assets/scroll-down.png";
 import About from "./About.jsx";
 import Projects from "./Projects.jsx";
+import Skills from "./Skills.jsx";
+import Work from "./Work.jsx";
 const Home = () => {
   return (
     <>
-    <div className="flex flex-row">
+      <div className="flex flex-row">
         <div className="h-full w-[90%] bg-[#F5F3EE]">
           {/* This is the navbar section */}
           <div className="w-full h-[60px] flex flex-row justify-between px-[64px] py-[20px]">
@@ -21,6 +23,9 @@ const Home = () => {
                   <li>WORK</li>
                   <a href="#about">
                     <li>ABOUT</li>
+                  </a>
+                  <a href="#projects">
+                    <li>PROJECTS</li>
                   </a>
                   <li>CONTACT</li>
                 </ul>
@@ -54,20 +59,45 @@ const Home = () => {
               className="w-[20px] h-[25px] mt-[50px]"
             />
           </div>
+
+
+          <div className='flex items-center w-full h-[10px] justify-center my-[115px]'><div className="w-[90%] h-[1px] bg-[#E0E0E0]" /></div>
+
+
           <section id="about">
             <About />
           </section>
 
-          <section>
-            <Projects/>
+          <div className='flex items-center w-full h-[10px] justify-center my-[115px]'><div className="w-[90%] h-[1px] bg-[#E0E0E0]" /></div>
+
+
+          <section id="projects">
+            <Projects />
           </section>
 
-        </div>
+          <div className='flex items-center w-full h-[10px] justify-center my-[115px]'><div className="w-[90%] h-[1px] bg-[#E0E0E0]" /></div>
+
+
+          <section id="skills">
+            <Skills />
+          </section >
+
+          <div className='flex items-center w-full h-[10px] justify-center my-[115px]'><div className="w-[90%] h-[1px] bg-[#E0E0E0]" /></div>
+
+
+          <section id="" >
+            <Work />
+          </section>
+
+          <div className='flex items-center w-full h-[10px] justify-center my-[115px]'><div className="w-[90%] h-[1px] bg-[#E0E0E0]" /></div>
+
+
+        </div >
 
         {/* This is the green section */}
 
-        <div className="w-[10%] h-[100] bg-[#566A2C]"></div>
-      </div>
+        < div div className="w-[10%] h-[100] bg-[#566A2C]" ></ div>
+      </div >
     </>
   )
 }
