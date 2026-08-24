@@ -1,22 +1,70 @@
 import React from "react";
-import SkillCard from "../components/SkillCard.jsx";
-const Skills = () => {
-  return <>
+import SkillCard from "../components/SkillCard";
 
-    {/* The title */}
-    <p className="text-[11px] font-bold text-[#111111] pl-[64px] mb-[20px]">SKILLS & TECHNOLOGY</p>
+const skillCategories = [
+  {
+    title: "LANGUAGES",
+    skills: [
+      "Python",
+      "Java",
+      "JavaScript",
+      "TypeScript",
+      "PHP",
+      "SQL",
+      "Bash",
+    ],
+  },
+  {
+    title: "FRAMEWORKS & LIBRARIES",
+    skills: ["Flutter", "React", "Laravel", "Node.js", "Dart"],
+  },
+  {
+    title: "DATABASES",
+    skills: [
+      "MySQL",
+      "PostgreSQL",
+      "Firebase",
+      "Supabase",
+      "SQLite",
+      "Appwrite",
+    ],
+  },
 
-    {/* The cards of the the skills and technology */}
+  {
+    title: "DEVOPS & TOOLING",
+    skills: [
+      "Git",
+      "Docker",
+      "Linux",
+      "VS Code",
+      "Figma",
+      "Postman",
+      "Tunneling",
+      "Open Source Softwares",
+    ],
+  },
+];
 
-    {/* The card container of the skills & technology stack */}
-    <SkillCard
-      title="LANGUAGES"
-      skills={["Python", "Java", "Javascript"]} />
+export default function Skills() {
+  return (
+    <section className="bg-[#f5f4f0] text-[#2c2b29] min-h-screen px-6 py-12 md:px-20 font-sans">
+      <div className="relative pl-8">
+        <div className="absolute left-0 top-0 bottom-0 w-[4px] bg-[#566A2C] rounded-full"></div>
 
-    <SkillCard
-      title="DATABASES"
-      skills={["MySQL", "PostgresSQL", "Firebase", "Supabase", "SQLite"]} />
-  </>;
-};
+        <h2 className="text-xs font-bold tracking-widest uppercase mb-10 text-neutral-800">
+          Skills & Technology
+        </h2>
 
-export default Skills;
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-fit">
+          {skillCategories.map((category, index) => (
+            <SkillCard
+              key={index}
+              title={category.title}
+              skills={category.skills}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
