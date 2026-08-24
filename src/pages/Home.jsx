@@ -1,105 +1,128 @@
-import React from 'react'
+import React from "react";
 import logo from "../assets/logo.png";
 import scrolldown from "../assets/scroll-down.png";
 import About from "./About.jsx";
 import Projects from "./Projects.jsx";
 import Skills from "./Skills.jsx";
 import Work from "./Work.jsx";
+import Education from "./Education.jsx";
+import Certifications from "./Certifications.jsx";
+import Contact from "./Contact.jsx";
+import Navigation from "./Navigation.jsx";
+
 const Home = () => {
   return (
-    <>
-      <div className="flex flex-row">
-        <div className="h-full w-[90%] bg-[#F5F3EE]">
-          {/* This is the navbar section */}
-          <div className="w-full h-[60px] flex flex-row justify-between px-[64px] py-[20px]">
-            <div className="">
-              <p className="color-[#111111] text-[12px] font-bold ">
-                GLENN CERENO
-              </p>
-            </div>
-            <div>
-              <div className="">
-                <ul className="flex justify-center items-center text-[#666666] text-[12px] gap-[35px]">
-                  <li>WORK</li>
-                  <a href="#about">
-                    <li>ABOUT</li>
-                  </a>
-                  <a href="#projects">
-                    <li>PROJECTS</li>
-                  </a>
-                  <li>CONTACT</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+    <div className="flex flex-row min-h-screen bg-[#F5F3EE]">
+      {/* Main Content Area (90% width) */}
+      <div className="w-[90%] bg-[#F5F3EE] flex flex-col relative">
+        {/* Sticky Navbar Section */}
+        <Navigation />
 
-          {/* This is the underline */}
+        {/* Hero / Home Header Section */}
+        <section
+          id="home"
+          className="w-full bg-[#F5F3EE] flex flex-col gap-[25px] px-[64px] py-[18vh] scroll-mt-24"
+        >
+          <img
+            src={logo}
+            alt="Logo"
+            className="w-[160px] h-[115px] object-contain"
+          />
+          <h1 className="font-bold text-[56px] text-[#111111] leading-[50px]">
+            HELLO, I'M GLENN.
+          </h1>
+          <h1 className="font-bold text-[56px] text-[#111111] leading-[50px]">
+            NICE TO MEET YOU.
+          </h1>
+          <p className="font-normal text-[13px] text-[#777777] w-[430px] leading-[23px] mt-2">
+            A holistic IT graduate who{" "}
+            <strong className="text-[#111111] font-bold">
+              creates, innovates and builds
+            </strong>{" "}
+            applications that help society flourish. Pursuing mastery in
+            Information Technology, Cybersecurity, and Law.
+          </p>
+
+          {/* Scroll Down Indicator */}
+          <img
+            src={scrolldown}
+            alt="Scroll down"
+            className="w-[20px] h-[25px] mt-[40px] opacity-70"
+          />
+        </section>
+
+        {/* Section Divider */}
+        <div className="flex items-center w-full justify-center my-[40px]">
+          <div className="w-[90%] h-[1px] bg-[#E0E0E0]" />
+        </div>
+
+        {/* Sections */}
+        <section id="about" className="scroll-mt-24">
+          <About />
+        </section>
+
+        <div className="flex items-center w-full justify-center my-[40px]">
+          <div className="w-[90%] h-[1px] bg-[#E0E0E0]" />
+        </div>
+
+        <section id="projects" className="scroll-mt-24">
+          <Projects />
+        </section>
+
+        <div className="flex items-center w-full justify-center my-[40px]">
+          <div className="w-[90%] h-[1px] bg-[#E0E0E0]" />
+        </div>
+
+        <section id="skills" className="scroll-mt-24">
+          <Skills />
+        </section>
+
+        <div className="flex items-center w-full justify-center my-[40px]">
+          <div className="w-[90%] h-[1px] bg-[#E0E0E0]" />
+        </div>
+
+        <section id="work" className="scroll-mt-24">
+          <Work />
+        </section>
+
+        <div className="flex items-center w-full justify-center my-[40px]">
+          <div className="w-[90%] h-[1px] bg-[#E0E0E0]" />
+        </div>
+
+        <section id="education" className="scroll-mt-24">
+          <Education />
+        </section>
+
+        <div className="flex items-center w-full justify-center my-[40px]">
+          <div className="w-[90%] h-[1px] bg-[#E0E0E0]" />
+        </div>
+
+        <section id="certifications" className="scroll-mt-24">
+          <Certifications />
+        </section>
+
+        <div className="flex items-center w-full justify-center my-[40px]">
+          <div className="w-[90%] h-[1px] bg-[#E0E0E0]" />
+        </div>
+
+        <section id="contact" className="scroll-mt-24">
+          <Contact />
+        </section>
+
+        {/* Footer Section */}
+        <footer className="w-full">
           <div className="w-full h-[1px] bg-[#E0E0E0]"></div>
-
-          {/* This is the body section */}
-          <div className="w-full h-full bg-[#F5F3EE] flex flex-col gap-[25px] px-[64px] py-[25vh]">
-            <img src={logo} alt="" className="w-[160px] h-[115px]" />
-            <p className="font-bold text-[56px] text-[#111111] leading-[50px]">
-              HELLO, I'M GLENN.
-            </p>
-            <p className="font-bold text-[56px] text-[#111111] leading-[50px]">
-              NICE TO MEET YOU.
-            </p>
-            <p className="font-regular text-[13px] text-[#777777] w-[430px] leading-[23px]">
-              A holistic IT graduate who{" "}
-              <b className="text-[#111111]">creates, innovates and builds</b>{" "}
-              applications that help society flourish. Pursuing mastery in
-              Information Technology, Cybersecurity, and Law.
-            </p>
-
-            {/* This is the scrolldown picture */}
-            <img
-              src={scrolldown}
-              alt=""
-              className="w-[20px] h-[25px] mt-[50px]"
-            />
+          <div className="flex flex-row justify-between items-center px-[64px] py-[30px] text-[11px] text-[#888888]">
+            <p>GLENN CERENO © 2026</p>
+            <p>Designed & built with care.</p>
           </div>
+        </footer>
+      </div>
 
+      {/* Right Side Green Accent Column (10% width) */}
+      <div className="w-[10%] bg-[#566A2C] min-h-full"></div>
+    </div>
+  );
+};
 
-          <div className='flex items-center w-full h-[10px] justify-center my-[115px]'><div className="w-[90%] h-[1px] bg-[#E0E0E0]" /></div>
-
-
-          <section id="about">
-            <About />
-          </section>
-
-          <div className='flex items-center w-full h-[10px] justify-center my-[115px]'><div className="w-[90%] h-[1px] bg-[#E0E0E0]" /></div>
-
-
-          <section id="projects">
-            <Projects />
-          </section>
-
-          <div className='flex items-center w-full h-[10px] justify-center my-[115px]'><div className="w-[90%] h-[1px] bg-[#E0E0E0]" /></div>
-
-
-          <section id="skills">
-            <Skills />
-          </section >
-
-          <div className='flex items-center w-full h-[10px] justify-center my-[115px]'><div className="w-[90%] h-[1px] bg-[#E0E0E0]" /></div>
-
-
-          <section id="" >
-            <Work />
-          </section>
-
-          <div className='flex items-center w-full h-[10px] justify-center my-[115px]'><div className="w-[90%] h-[1px] bg-[#E0E0E0]" /></div>
-
-
-        </div >
-
-        {/* This is the green section */}
-
-        < div div className="w-[10%] h-[100] bg-[#566A2C]" ></ div>
-      </div >
-    </>
-  )
-}
-
-export default Home
+export default Home;
