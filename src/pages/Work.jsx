@@ -22,12 +22,12 @@ const workExperiences = [
 
 export default function Work() {
   return (
-    <section className="bg-[#f5f4f0] text-[#2c2b29] min-h-screen px-6 py-12 md:px-20 font-sans">
-      <h2 className="text-xs font-bold tracking-widest uppercase mb-10 text-neutral-800">
+    <section className="bg-[#f5f4f0] text-[#2c2b29] px-6 sm:px-12 lg:px-[64px] py-16 font-sans">
+      <h2 className="text-xs font-bold tracking-widest uppercase mb-6 text-neutral-800">
         Work
       </h2>
 
-      <div className="relative border-l border-neutral-300 ml-2 space-y-12">
+      <div className="relative border-l border-neutral-300 ml-2 space-y-8 w-full">
         {workExperiences.map((job, index) => (
           <WorkCard
             key={index}

@@ -2,14 +2,11 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="bg-[#f5f4f0] text-[#2c2b29] min-h-screen px-6 py-12 md:px-20 font-sans">
-      <div className="flex flex-col gap-[20px] max-w-2xl">
-        {/* Section Title */}
-        <h2 className="text-xs font-bold tracking-widest uppercase mb-10 text-neutral-800">
+    <section className="bg-[#f5f4f0] text-[#2c2b29] px-6 sm:px-12 lg:px-[64px] py-16 font-sans">
+      <div className="flex flex-col gap-[20px] max-w-3xl">
+        <h2 className="text-xs font-bold tracking-widest uppercase mb-4 text-neutral-800">
           About
         </h2>
-
-        {/* Text Content */}
         <div className="flex flex-col text-[#555555] text-[13px] gap-[15px] leading-relaxed">
           <p>
             I am Glenn Cereno, an IT graduate student based in the Philippines
