@@ -14,27 +14,27 @@ const Home = () => {
   return (
     <div className="flex flex-row min-h-screen bg-[#F5F3EE]">
       {/* Main Content Area (90% width) */}
-      <div className="w-[90%] bg-[#F5F3EE] flex flex-col relative">
+      <div className="w-[90%] bg-[#F5F3EE] flex flex-col relative overflow-hidden">
         {/* Sticky Navbar Section */}
         <Navigation />
 
         {/* Hero / Home Header Section */}
         <section
           id="home"
-          className="w-full bg-[#F5F3EE] flex flex-col gap-[25px] px-[64px] py-[18vh] scroll-mt-24"
+          className="w-full bg-[#F5F3EE] flex flex-col gap-[20px] px-6 sm:px-12 lg:px-[64px] py-16 scroll-mt-24"
         >
           <img
             src={logo}
             alt="Logo"
-            className="w-[160px] h-[115px] object-contain"
+            className="w-[140px] sm:w-[160px] h-[100px] sm:h-[115px] object-contain"
           />
-          <h1 className="font-bold text-[56px] text-[#111111] leading-[50px]">
+          <h1 className="font-bold text-[36px] sm:text-[46px] lg:text-[56px] text-[#111111] leading-[42px] sm:leading-[50px]">
             HELLO, I'M GLENN.
           </h1>
-          <h1 className="font-bold text-[56px] text-[#111111] leading-[50px]">
+          <h1 className="font-bold text-[36px] sm:text-[46px] lg:text-[56px] text-[#111111] leading-[42px] sm:leading-[50px]">
             NICE TO MEET YOU.
           </h1>
-          <p className="font-normal text-[13px] text-[#777777] w-[430px] leading-[23px] mt-2">
+          <p className="font-normal text-[13px] text-[#777777] w-full max-w-[500px] leading-[23px] mt-2">
             A holistic IT graduate who{" "}
             <strong className="text-[#111111] font-bold">
               creates, innovates and builds
@@ -47,12 +47,12 @@ const Home = () => {
           <img
             src={scrolldown}
             alt="Scroll down"
-            className="w-[20px] h-[25px] mt-[40px] opacity-70"
+            className="w-[20px] h-[25px] mt-[20px] opacity-70 hidden sm:block"
           />
         </section>
 
         {/* Section Divider */}
-        <div className="flex items-center w-full justify-center my-[40px]">
+        <div className="flex items-center w-full justify-center my-4">
           <div className="w-[90%] h-[1px] bg-[#E0E0E0]" />
         </div>
 
@@ -61,7 +61,7 @@ const Home = () => {
           <About />
         </section>
 
-        <div className="flex items-center w-full justify-center my-[40px]">
+        <div className="flex items-center w-full justify-center my-4">
           <div className="w-[90%] h-[1px] bg-[#E0E0E0]" />
         </div>
 
@@ -69,7 +69,7 @@ const Home = () => {
           <Projects />
         </section>
 
-        <div className="flex items-center w-full justify-center my-[40px]">
+        <div className="flex items-center w-full justify-center my-4">
           <div className="w-[90%] h-[1px] bg-[#E0E0E0]" />
         </div>
 
@@ -77,7 +77,7 @@ const Home = () => {
           <Skills />
         </section>
 
-        <div className="flex items-center w-full justify-center my-[40px]">
+        <div className="flex items-center w-full justify-center my-4">
           <div className="w-[90%] h-[1px] bg-[#E0E0E0]" />
         </div>
 
@@ -85,7 +85,7 @@ const Home = () => {
           <Work />
         </section>
 
-        <div className="flex items-center w-full justify-center my-[40px]">
+        <div className="flex items-center w-full justify-center my-4">
           <div className="w-[90%] h-[1px] bg-[#E0E0E0]" />
         </div>
 
@@ -93,7 +93,7 @@ const Home = () => {
           <Education />
         </section>
 
-        <div className="flex items-center w-full justify-center my-[40px]">
+        <div className="flex items-center w-full justify-center my-4">
           <div className="w-[90%] h-[1px] bg-[#E0E0E0]" />
         </div>
 
@@ -101,7 +101,7 @@ const Home = () => {
           <Certifications />
         </section>
 
-        <div className="flex items-center w-full justify-center my-[40px]">
+        <div className="flex items-center w-full justify-center my-4">
           <div className="w-[90%] h-[1px] bg-[#E0E0E0]" />
         </div>
 
@@ -112,7 +112,7 @@ const Home = () => {
         {/* Footer Section */}
         <footer className="w-full">
           <div className="w-full h-[1px] bg-[#E0E0E0]"></div>
-          <div className="flex flex-row justify-between items-center px-[64px] py-[30px] text-[11px] text-[#888888]">
+          <div className="flex flex-col sm:flex-row justify-between items-center px-6 sm:px-[64px] py-[30px] text-[11px] text-[#888888] gap-2">
             <p>GLENN CERENO © 2026</p>
             <p>Designed & built with care.</p>
           </div>

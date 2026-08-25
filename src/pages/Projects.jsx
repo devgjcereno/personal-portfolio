@@ -24,22 +24,25 @@ const projectsList = [
 
 export default function Projects() {
   return (
-    <section className="bg-[#f5f4f0] text-[#2c2b29] min-h-screen px-6 py-12 md:px-20 font-sans">
-      <h2 className="text-xs font-bold tracking-widest uppercase mb-10 text-neutral-800">
-        Projects
-      </h2>
+    <section className="bg-[#f5f4f0] text-[#2c2b29] px-6 sm:px-12 lg:px-[64px] py-16 font-sans">
+      <div className="w-full max-w-5xl">
+        <h2 className="text-xs font-bold tracking-widest uppercase mb-6 text-neutral-800">
+          Projects
+        </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-fit">
-        {projectsList.map((project, index) => (
-          <ProjectCard
-            key={index}
-            image={project.image}
-            title={project.title}
-            category={project.category}
-            description={project.description}
-            techStack={project.techStack}
-          />
-        ))}
+        {/* Left-aligned grid with balanced spacing */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 w-full">
+          {projectsList.map((project, index) => (
+            <ProjectCard
+              key={index}
+              image={project.image}
+              title={project.title}
+              category={project.category}
+              description={project.description}
+              techStack={project.techStack}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
