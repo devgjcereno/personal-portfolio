@@ -14,6 +14,12 @@ const socialLinks = [
     isPrimary: false,
     icon: "⌘",
   },
+  {
+    label: "FACEBOOK",
+    href: "https://www.facebook.com/profile.php?id=61572014758349",
+    isPrimary: false,
+    icon: "F",
+  },
 ];
 
 export default function Contact() {
